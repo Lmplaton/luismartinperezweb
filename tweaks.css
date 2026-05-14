@@ -1,0 +1,153 @@
+/* Tweaks panel styling — minimal, editorial */
+.tweaks-panel {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 280px;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  z-index: 100;
+  font-family: var(--serif);
+  color: var(--ink);
+  transform: translateY(20px) scale(.96);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--t-fast) var(--ease), transform var(--t-fast) var(--ease);
+  box-shadow: 0 18px 48px rgba(0,0,0,.18);
+}
+.tweaks-panel.on { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
+[data-theme="dark"] .tweaks-panel { box-shadow: 0 18px 48px rgba(0,0,0,.5); }
+
+.tweaks-panel .tw-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--rule-soft);
+}
+.tweaks-panel .tw-title {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.tweaks-panel .tw-close {
+  background: transparent;
+  border: 0;
+  color: var(--muted);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  width: 24px; height: 24px;
+}
+.tweaks-panel .tw-close:hover { color: var(--ink); }
+
+.tweaks-panel .tw-body { padding: 18px 16px 10px; }
+.tweaks-panel .tw-section { margin-bottom: 22px; }
+.tweaks-panel .tw-section h4 {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+  margin: 0 0 10px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.tweaks-panel .tw-section h4 small {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: .65;
+  font-weight: 500;
+}
+
+.tweaks-panel .tw-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--rule-soft);
+}
+.tweaks-panel .tw-grid button {
+  background: transparent;
+  border: 0;
+  padding: 9px 6px;
+  font-family: var(--serif);
+  font-size: 12.5px;
+  letter-spacing: -.005em;
+  color: var(--muted);
+  cursor: pointer;
+  border-right: 1px solid var(--rule-soft);
+  border-top: 1px solid var(--rule-soft);
+  transition: background var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
+}
+.tweaks-panel .tw-grid button:nth-child(-n+3) { border-top: 0; }
+.tweaks-panel .tw-grid button:nth-child(3n) { border-right: 0; }
+.tweaks-panel .tw-grid button:hover { color: var(--ink); }
+.tweaks-panel .tw-grid button.on { background: var(--ink); color: var(--paper); }
+
+.tweaks-panel .tw-radio {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  border: 1px solid var(--rule-soft);
+}
+.tweaks-panel .tw-radio button {
+  background: transparent;
+  border: 0;
+  padding: 10px 8px;
+  font-family: var(--serif);
+  font-size: 13.5px;
+  letter-spacing: -.005em;
+  color: var(--muted);
+  cursor: pointer;
+  border-right: 1px solid var(--rule-soft);
+  transition: background var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
+}
+.tweaks-panel .tw-radio button:last-child { border-right: 0; }
+.tweaks-panel .tw-radio button:hover { color: var(--ink); }
+.tweaks-panel .tw-radio button.on { background: var(--ink); color: var(--paper); }
+
+.tweaks-panel .tw-swatches {
+  display: flex;
+  gap: 10px;
+}
+.tweaks-panel .tw-swatches button {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: 1px solid var(--rule-soft);
+  background: var(--c);
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  transition: transform var(--t-fast) var(--ease);
+}
+.tweaks-panel .tw-swatches button:hover { transform: scale(1.08); }
+.tweaks-panel .tw-swatches button.on {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+.tweaks-panel .tw-hint {
+  margin: 8px 0 0;
+  font-size: 12.5px;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.tweaks-panel .tw-foot {
+  padding: 14px 16px;
+  border-top: 1px solid var(--rule-soft);
+  color: var(--muted);
+}
+.tweaks-panel .tw-foot .mono { font-size: 9.5px; }
+
+@media (max-width: 520px) {
+  .tweaks-panel { left: 12px; right: 12px; width: auto; bottom: 12px; }
+}
