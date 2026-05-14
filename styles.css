@@ -96,6 +96,20 @@
 /* --------------------------------------------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; }
 
+.skip-link {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+  left: -9999px;
+  background: none;
+  color: transparent;
+  outline: none;
+}
+
 html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
@@ -194,18 +208,20 @@ section + section { border-top: 1px solid var(--rule-soft); }
   position: sticky;
   top: 0;
   z-index: 40;
-  background: color-mix(in oklab, var(--paper) 88%, transparent);
+  background: rgba(243,239,230,.88);
   backdrop-filter: saturate(140%) blur(8px);
   -webkit-backdrop-filter: saturate(140%) blur(8px);
   border-bottom: 1px solid transparent;
   transition: background var(--t-med) var(--ease), border-color var(--t-med) var(--ease), box-shadow var(--t-med) var(--ease);
 }
 .site-header[data-scrolled] {
-  background: color-mix(in oklab, var(--paper) 96%, transparent);
+  background: rgba(243,239,230,.96);
   border-bottom-color: var(--rule-soft);
   box-shadow: 0 8px 28px rgba(0,0,0,.05), 0 1px 0 var(--rule-soft);
 }
+[data-theme="dark"] .site-header { background: rgba(19,18,16,.88); }
 [data-theme="dark"] .site-header[data-scrolled] {
+  background: rgba(19,18,16,.96);
   box-shadow: 0 8px 28px rgba(0,0,0,.35), 0 1px 0 var(--rule-soft);
 }
 
