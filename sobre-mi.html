@@ -108,10 +108,40 @@
     <section>
       <div class="wrap">
 
-        <figure class="portrait-feature reveal">
-          <img src="assets/luisfoto5ok.jpeg" alt="Luis Martín Pérez en la exposición Exploring AI — Haciendo visible lo invisible." width="1290" height="966" />
-          <figcaption>Luis Martín Pérez — Exploring AI · Haciendo visible lo invisible.</figcaption>
-        </figure>
+        <div class="portrait-feature reveal" style="position:relative;overflow:hidden">
+          <div id="carousel" style="display:flex;transition:transform 500ms ease;will-change:transform">
+            <figure style="min-width:100%;margin:0">
+              <img src="assets/luisfoto5ok.jpeg" alt="Luis Martín Pérez en la exposición Exploring AI — Haciendo visible lo invisible." loading="lazy" style="width:100%;display:block;object-fit:cover;max-height:560px" />
+            </figure>
+            <figure style="min-width:100%;margin:0">
+              <img src="assets/luis-portada.jpg" alt="Luis Martín Pérez durante una conferencia sobre inteligencia artificial y comunicación." loading="lazy" style="width:100%;display:block;object-fit:cover;max-height:560px" />
+            </figure>
+          </div>
+          <button onclick="moveCarousel(-1)" aria-label="Anterior" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);background:rgba(21,20,15,.5);color:#f3efe6;border:0;width:36px;height:36px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center">‹</button>
+          <button onclick="moveCarousel(1)" aria-label="Siguiente" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);background:rgba(21,20,15,.5);color:#f3efe6;border:0;width:36px;height:36px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center">›</button>
+          <div style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:6px">
+            <span id="dot0" style="width:6px;height:6px;border-radius:50%;background:#f3efe6;opacity:1;display:block"></span>
+            <span id="dot1" style="width:6px;height:6px;border-radius:50%;background:#f3efe6;opacity:.4;display:block"></span>
+          </div>
+          <figcaption id="carousel-caption" style="font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:10px">Exploring AI · Haciendo visible lo invisible</figcaption>
+        </div>
+        <script>
+          (function(){
+            var current = 0;
+            var captions = ['Exploring AI · Haciendo visible lo invisible', 'Conferencia sobre IA, comunicación y nuevos sistemas de prescripción'];
+            function update(){
+              document.getElementById('carousel').style.transform = 'translateX(-' + (current * 100) + '%)';
+              document.getElementById('carousel-caption').textContent = captions[current];
+              [0,1].forEach(function(i){
+                document.getElementById('dot'+i).style.opacity = i===current ? '1' : '.4';
+              });
+            }
+            window.moveCarousel = function(dir){
+              current = (current + dir + 2) % 2;
+              update();
+            };
+          })();
+        </script>
 
         <div class="bio-grid">
           <div class="reveal">
