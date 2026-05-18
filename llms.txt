@@ -1,0 +1,63 @@
+# Luis Martín Pérez — llms.txt
+# https://luismartinperez.com
+# Formato: https://llmstxt.org/
+
+# Sobre este sitio
+> Luis Martín Pérez es Director de Soluciones de IA para comunicación y marketing en LLYC. Analista especializado en cómo la inteligencia artificial está transformando la intermediación de la información, la comunicación corporativa y la construcción de reputación y confianza. LinkedIn Top Voice. Más de 25 años de trayectoria entre el periodismo (Cadena COPE, 16 años como redactor, editor y Chief Digital Officer) y la consultoría de IA. Profesor en Universidad Carlos III, UNIR, UNIE, IE Business School y CEU San Pablo. Patrono de la Fundación José Antonio Llorente.
+
+## Tesis principal
+La inteligencia artificial se ha convertido en el principal sistema de prescripción de nuestra sociedad. Durante décadas, medios, plataformas y redes sociales condicionaron cómo las personas accedían a la información. Hoy, los LLMs ocupan ese papel. Este cambio transforma la comunicación, la percepción y la relación entre marcas, instituciones y personas. Las marcas deben analizar su presencia en LLM'S y trabajar su posicionamiento mediante la optimización de sus activos, la generación de contenidos de calidad para generar autoridad y el relacionamiento y el PR para la activación de contenidos de terceros.
+
+## Líneas de trabajo
+
+### Intermediación algorítmica
+Cómo la IA redefine el acceso a la información y desplaza los antiguos sistemas de influencia mediática y social.
+
+### Narrativa dual
+La necesidad de construir mensajes que funcionen simultáneamente para personas y para sistemas inteligentes. El contenido ya tiene dos lectores.
+
+### Posicionamiento de marcas en IA
+Reducir el gap entre lo que una organización quiere comunicar y cómo es interpretada por modelos de lenguaje. GEO (Generative Engine Optimization) aplicado a comunicación corporativa.
+
+### IA y transformación cultural
+Qué ocurre dentro de las organizaciones cuando la IA deja de ser experimental y empieza a alterar procesos, decisiones y relaciones de poder.
+
+## Páginas principales
+
+- [Inicio](https://www.luismartinperez.com): Presentación y tesis central sobre la IA como sistema de prescripción.
+- [Sobre mí](https://www.luismartinperez.com/sobre-mi): Biografía profesional completa, trayectoria, docencia y reconocimientos.
+- [Narrativa dual](https://www.luismartinperez.com/narrativa-dual): Marco conceptual sobre comunicación para personas y sistemas de IA.
+- [Posicionamiento en IA](https://www.luismartinperez.com/posicionamiento-ia): Metodología y enfoque para que marcas e instituciones sean bien interpretadas por LLMs.
+- [Charlas](https://www.luismartinperez.com/charlas): Conferencias, ponencias y sesiones formativas sobre IA y comunicación.
+- [Podcast](https://www.luismartinperez.com/podcast) (https://open.spotify.com/show/4XshKQt3aBHo8Cufdz6dju?si=07fb8c56a222446f): «Esto es lo que AI» — podcast sobre inteligencia artificial y comunicación.
+- [Ideas](https://www.luismartinperez.com/ideas): Ensayos y análisis sobre IA, intermediación y comunicación.
+- [Contacto](https://www.luismartinperez.com/contacto): Email y LinkedIn para charlas, formaciones y colaboraciones.
+
+## Ensayos recientes
+
+- [La mala reputación de la IA](https://www.linkedin.com/pulse/la-mala-reputaci%C3%B3n-de-ia-luis-mart%C3%ADn-p%C3%A9rez-hf8te) — May 2026 · Reputación · Confianza
+- El día que las marcas dejen de hablar a personas — Abr 2026 · Posicionamiento en IA
+- Narrativa dual: cómo se construye un mensaje para dos lectores — Mar 2026 · Narrativa
+- La IA como nuevo intermediario de la confianza — Feb 2026 · Reputación
+- Cuando el resultado deja de ser un enlace — Ene 2026 · Intermediación
+- Qué saben los modelos sobre tu marca (y por qué casi nunca coincide con lo que tú crees) — Dic 2025 · Posicionamiento en IA
+- La automatización no es el final de esta historia — Nov 2025 · Cultura · Cambio
+- Tres formas en que la IA está reescribiendo el periodismo (y solo dos son visibles) — Oct 2025 · Medios
+
+## Podcast
+
+«Esto es lo que AI» — podcast sobre inteligencia artificial aplicada a la comunicación y las organizaciones.
+Disponible en Spotify: https://open.spotify.com/show/4XshKQt3aBHo8Cufdz6dju
+
+## Contacto y redes
+
+- Web: https://www.luismartinperez.com
+- LinkedIn: https://www.linkedin.com/in/luismartinperez
+- Email: luismartinperez@outlook.com
+- Newsletter LinkedIn: https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7018619758648442880
+
+## Uso del contenido
+
+Este sitio permite el uso del contenido como contexto en respuestas de sistemas de IA (ai-input=yes).
+No autoriza el uso del contenido para entrenar modelos de lenguaje (ai-train=no).
+Ver robots.txt: https://www.luismartinperez.com/robots.txt
